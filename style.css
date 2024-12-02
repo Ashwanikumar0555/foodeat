@@ -33,7 +33,7 @@ body:body::before{
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -73,4 +73,46 @@ body:body::before{
 .nav-links a:hover::after{
     width: 100%;
 
+}
+
+.hamburger{
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+
+}
+.hero{
+    padding: 8rem 4 rem 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200;
+    margin: 0 auto;
+    position: relative;
+
+}
+.hero-contant{
+    flex: 1;
+    padding: 2rem;
+    background: rgba(255, 255, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    box-shadow: 0 4px 30px rgba( 0,0,0,0.1);
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #333, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+    color: #333
+    margin-bottom: 2rem;
+    line-height:1.6;
+    
 }
